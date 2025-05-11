@@ -1,7 +1,7 @@
 # Use the official Node.js image as a base
 FROM node:23-alpine
 # Set the working directory inside the container
-WORKDIR /src
+WORKDIR /usr/src/app
 # Copy package.json and install dependencies (if any)
 COPY package*.json ./
 # Copy the rest of the application code
