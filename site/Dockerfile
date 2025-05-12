@@ -3,7 +3,7 @@ FROM node:23-alpine
 # Set the working directory inside the container
 WORKDIR /usr/src/app
 # Copy package.json and install dependencies (if any)
-COPY package*.json ./
+COPY package*.json /src/index.js ./
 # Copy the rest of the application code
 COPY . .
 # Expose port 8080 for Cloud Run
